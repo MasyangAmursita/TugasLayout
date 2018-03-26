@@ -5,7 +5,7 @@ import {
   View
 } from 'react-native';
 
-export default class HitungVolumeBalok extends Component {
+export default class PerkiraanCuaca extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -22,7 +22,7 @@ export default class HitungVolumeBalok extends Component {
 
         <View style={{ backgroundColor: '#2196f3' }}>
            <Text style={{ padding: 10, fontSize: 20, color: 'white', textAlign: 'center' }} >
-            Menghitung Volume Balok
+            Perkiraan Cuaca
           </Text>
          </View>
 
@@ -37,7 +37,7 @@ export default class HitungVolumeBalok extends Component {
                 volume: (this.state.panjang * this.state.lebar * this.state.tinggi)
               })}
               title="Submith"
-              accessibilityLabel="Klik untuk menghitung"
+              accessibilityLabel="Submith"
             />
        </View>
 
