@@ -9,10 +9,6 @@ export default class PerkiraanCuaca extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      panjang: 0,
-      lebar: 0,
-      tinggi: 0,
-      volume: 0
     };
   }
 
@@ -33,9 +29,6 @@ export default class PerkiraanCuaca extends Component {
             />
 
             <Button
-              onPress={() => this.setState({
-                volume: (this.state.panjang * this.state.lebar * this.state.tinggi)
-              })}
               title="Submith"
               accessibilityLabel="Submith"
             />
